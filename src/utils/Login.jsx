@@ -26,7 +26,13 @@ const Login = () => {
         }
       )
       alert("successful")
-      navigate("/")
+
+      if (alert = "successful") {
+        navigate("/")
+      }else{
+        navigate("/")
+      }
+      
       
     } catch (error) {
       { account.get ? account.deleteSession('current') : alert("You should create an account first")}
