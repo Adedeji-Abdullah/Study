@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link, Navigate, Route, useNavigate } from 'react-router-dom'
+import { Link, Route, useNavigate } from 'react-router-dom'
 import { account } from '../appwrite'
 import Register from './Register'
 import Logout from './Logout'
@@ -10,6 +10,7 @@ import Firstpage from '../component/Firstpage'
 
 
 const Login = () => {
+
 
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -28,16 +29,19 @@ const Login = () => {
         }
       )
       alert("successful")
+
       navigate("/")
       
     } catch (error) {
-      { account.get ? account.deleteSession('current') : alert("You should create an account first")}
-      if (error.message = "Creation of a session is prohibited when a session is active.") {
-        setErrorm("re-press Login")
-        alert(errorm)
-      } else {
-        alert(error.message)
-      }
+      // { account.get ? account.deleteSession('current') : alert("You should create an account first")}
+      // if (error.message = "Creation of a session is prohibited when a session is active.") {
+      //   setErrorm("re-press Login")
+      //   alert(errorm)
+      // } else {
+      //   alert(error.message)
+      // }
+
+      alert(error.message)
     }
 
   }
