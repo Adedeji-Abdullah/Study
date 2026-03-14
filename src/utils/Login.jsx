@@ -32,6 +32,8 @@ const Login = () => {
       }else{
         navigate("/")
       }
+
+      navigate("/")
       
       
     } catch (error) {
