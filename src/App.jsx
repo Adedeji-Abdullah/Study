@@ -12,7 +12,7 @@ import PrivateRoute from "./Routes/PrivateRoute"
 import Quote from './component/Sub-component/Sub-Sub-component/Quote'
 import Average from './component/Sub-component/Sub-Sub-component/Average'
 import Dashboard from './component/Sub-component/Sub-Sub-component/Dashboard'
-import Jamb from './component/Sub-component/Sub-Sub-component/jamb'
+import Jamb from './component/Sub-component/Sub-Sub-component/Jamb'
 import Time from './component/Sub-component/Sub-Sub-component/Time'
 import Improvement from './component/Sub-component/Sub-Sub-component/Improvement'
 import Reading from './component/Sub-component/Sub-Sub-component/Improvement'
