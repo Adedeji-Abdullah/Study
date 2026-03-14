@@ -7,6 +7,8 @@ import Firstpage from '../component/Firstpage'
 
 
 
+
+
 const Login = () => {
 
   const [email, setEmail] = useState("")
@@ -26,15 +28,7 @@ const Login = () => {
         }
       )
       alert("successful")
-
-      if (alert = "successful") {
-        navigate("/")
-      }else{
-        navigate("/")
-      }
-
       navigate("/")
-      
       
     } catch (error) {
       { account.get ? account.deleteSession('current') : alert("You should create an account first")}
