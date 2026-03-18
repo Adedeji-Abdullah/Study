@@ -33,13 +33,13 @@ const Login = () => {
       navigate("/")
       
     } catch (error) {
-      // { account.get ? account.deleteSession('current') : alert("You should create an account first")}
-      // if (error.message = "Creation of a session is prohibited when a session is active.") {
-      //   setErrorm("re-press Login")
-      //   alert(errorm)
-      // } else {
-      //   alert(error.message)
-      // }
+      { account.get ? account.deleteSession('current') : alert("You should create an account first")}
+      if (error.message = "Creation of a session is prohibited when a session is active.") {
+        setErrorm("re-press Login")
+        alert(errorm)
+      } else {
+        alert(error.message)
+      }
 
       alert(error.message)
     }

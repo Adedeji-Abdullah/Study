@@ -67,8 +67,8 @@ button:focus-visible {
   }
 } */
 
-.nav-bar{
-background-color: rgb(99, 0, 99);
+.nav-bar {
+  background-color: rgb(99, 0, 99);
   height: 80vh;
   float: left;
   width: 20%;
@@ -76,7 +76,7 @@ background-color: rgb(99, 0, 99);
   padding-top: 70px;
 }
 
-button{
+button {
   cursor: pointer;
   display: block;
   margin: 35px;
@@ -87,7 +87,7 @@ button{
   border: 0;
 }
 
-.welcome{
+.welcome {
   background-color: rgb(99, 0, 99);
   height: 40%;
   width: 60%;
@@ -98,21 +98,21 @@ button{
   margin: 50px auto 0;
 }
 
-.right-hand-side{
+.right-hand-side {
   width: 80%;
   height: 80vh;
   float: right;
 }
 
-h1{
+h1 {
   color: white;
 }
 
-.plan{
+.plan {
   color: gray;
 }
 
-.special{
+.special {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1em;
@@ -121,24 +121,24 @@ h1{
   margin: auto;
 }
 
-dl{
-    background-color: rgb(214, 58, 214);
-    border-radius: 6px;
-    width: 150px;
-    height: 150px;
+dl {
+  background-color: rgb(214, 58, 214);
+  border-radius: 6px;
+  width: 150px;
+  height: 150px;
 }
 
-dl p{
+dl p {
   padding-left: 10px;
   color: white;
   font-size: larger;
 }
 
-.Exam{
+.Exam {
   margin-left: 50px;
 }
 
-.login{
+.login {
   display: block;
   float: left;
   width: 40%;
@@ -149,7 +149,7 @@ dl p{
   padding-top: 5%;
 }
 
-.Login-page{
+.Login-page {
   float: right;
   width: 60%;
   background: linear-gradient(to bottom, #a855f7, #7903e8);
@@ -158,79 +158,77 @@ dl p{
   padding-top: 5%;
 }
 
-span{
+span {
   font-size: 40px;
   font-weight: 900;
 }
 
-.email{
-  border-radius: 5px;;
+.email {
+  border-radius: 5px;
   height: 20px;
   display: block;
   margin: auto;
   margin-bottom: 15px;
 }
 
-.password{
+.password {
   border-radius: 5px;
   height: 20px;
   display: block;
   margin: auto;
 }
 
-.Login-btn{
+.Login-btn {
   background-color: rgb(198, 42, 198);
   width: 50%;
   margin: auto;
   margin-top: 35px;
   border-radius: 7px;
   padding: 5px;
-  
 }
 
-.Login-btn:hover{
-  background-color: rgb(93, 3, 93);;
+.Login-btn:hover {
+  background-color: rgb(93, 3, 93);
   transform: translateY(-2px);
 }
 
-.logout:hover{
-  background-color: rgb(93, 3, 93);;
+.logout:hover {
+  background-color: rgb(93, 3, 93);
   transform: translateY(-2px);
 }
 
-
-.login-account{
+.login-account {
   font-size: 10px;
   padding-left: 40px;
 }
 
-.logout{
+.logout {
   padding: 6px;
   border-radius: 5px;
   margin: auto;
   margin-top: 60px;
 }
 
-.person{
+.person {
   float: right;
   width: 200px;
   padding-top: 30px;
 }
 
-.welcome-back{
+.welcome-back {
   font-size: large;
   font-weight: 200;
   padding-left: 30px;
 }
 
-.Register{
+.Register {
   background: linear-gradient(to bottom, #9b41ef, #5a00ae);
   height: 83vh;
   text-align: center;
   padding-top: 80px;
 }
 
-.register-btn{
+.register-btn {
   background-color: rgb(109, 0, 149);
   width: 25%;
   margin: auto;
@@ -239,44 +237,44 @@ span{
   padding: 5px;
 }
 
-.register-btn:hover{
-  background-color: rgb(93, 3, 93);;
+.register-btn:hover {
+  background-color: rgb(93, 3, 93);
   transform: translateY(-2px);
 }
 
-.acc-non{
+.acc-non {
   padding-top: 35px;
 }
 
-.left-img{
+.left-img {
   height: 20px;
 }
 
-.left-img:hover{
+.left-img:hover {
   color: #a855f7;
   transform: translate(-3px);
 }
 
-.first-png{
+.first-png {
   float: right;
   height: 150px;
   margin-top: -100px;
 }
 
-.today-quote{
+.today-quote {
   color: purple;
   text-align: center;
   height: 90vh;
   background-color: rgb(46, 0, 66);
 }
 
-.head-quote{
+.head-quote {
   padding-top: 80px;
   width: 50%;
   margin: auto;
 }
 
-.quote{
+.quote {
   background-color: #0b0016d3;
   box-shadow: black;
   height: 90px;
@@ -284,31 +282,31 @@ span{
   margin: auto;
 }
 
-.com{
+.com {
   color: black;
 }
 
-.qouted{
+.qouted {
   font-size: 30px;
   width: 50%;
   margin: auto;
   padding-top: 50px;
 }
 
-.quote-box{
+.quote-box {
   font-size: 60px;
 }
 
-.in{
+.in {
   color: black;
 }
 
-button{
+button {
   padding: 30px;
   margin: auto;
 }
 
-.timer{
+.timer {
   background-color: #9b41ef;
   height: 50vh;
   margin: auto;
@@ -316,37 +314,37 @@ button{
   margin: 0 250px;
 }
 
-.settime{
+.settime {
   border-radius: 5px;
   height: 20px;
   width: 1/2%;
   margin-top: 30px;
 }
 
-.clock{
+.clock {
   display: block;
   margin: auto;
 }
 
-.min{
+.min {
   border-radius: 6px;
 }
 
-.avfirst2{
+.avfirst2 {
   padding: 50px;
 }
 
-.avsecond2{
+.avsecond2 {
   padding: 50px;
 }
 
-.divAv2{
-  background: linear-gradient(to right, #320160,#a855f7 );
+.divAv2 {
+  background: linear-gradient(to right, #320160, #a855f7);
   box-align: center;
   height: 50vh;
 }
 
-.sub{
+.sub {
   padding-right: 16px;
   margin-right: 20px;
   height: 30px;
@@ -354,8 +352,7 @@ button{
   border: none;
 }
 
-
-.sco{
+.sco {
   padding-right: 16px;
   margin-right: 20px;
   height: 20px;
@@ -363,30 +360,30 @@ button{
   border: none;
 }
 
-.cal{
+.cal {
   background-color: #5a00ae;
   margin-top: 80px;
 }
 
-.sum{
+.sum {
   color: #320160;
   font-size: 90px;
   text-align: center;
   padding-top: 50px;
 }
 
-.part2{
+.part2 {
   float: right;
   margin-top: -300px;
 }
 
-.divAv5{
-   background: linear-gradient(to right, #320160,#a855f7 );
+.divAv5 {
+  background: linear-gradient(to right, #320160, #a855f7);
   box-align: center;
   height: 60vh;
 }
 
-.quiz-btn{
+.quiz-btn {
   background-color: wheat;
   box-shadow: black;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
@@ -395,15 +392,91 @@ button{
   border-radius: 6px;
 }
 
-.whoe{
+.whoe {
   text-align: center;
   font-size: larger;
 }
 
-.qui{
+.qui {
   color: #320160;
   padding-bottom: 30px;
 }
+
+.qqq {
+  color: black;
+  background-color: white;
+}
+
+.harm {
+  display: block;
+  color: #320160;
+}
+
+.delete{
+  font-size: 30px;
+  display: none;
+}
+
+
+
+@media (max-width: 1000px) {
+  .special {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding-top: 35px;
+    padding-left: 15px;
+    margin: auto;
+  }
+
+  .quiz {
+    margin-left: 50px;
+  }
+
+  .harm {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .harm {
+    display: block;
+    font-size: 50px;
+    color: #320160;
+    height: 80vh;
+  float: left;
+  width: 20%;
+  border-radius: 8px;
+  padding-top: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .harm {
+    display: block;
+    font-size: 50px;
+    /* color: #320160; */
+    height: 0px;
+  
+  width: 20%;
+  border-radius: 8px;
+  padding-top: 10px;
+  }
+
+  .special{
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 

@@ -47,7 +47,7 @@ const handleQuiz = () => {
           <img src="" alt="Clock" />
           <button>You have a test?</button>
         </dl>
-        <dl>
+        <dl className='quiz'>
           <img src="" alt="book" />
           <button onClick={handleQuiz}>Quiz</button>
         </dl>

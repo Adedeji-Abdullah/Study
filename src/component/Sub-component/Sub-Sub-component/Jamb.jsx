@@ -1,32 +1,86 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from "react";
 
 const jamb = () => {
-     const token = "QB-QB-24aa21fe651e5576569e"
+  const [good, setGood] = useState(false);
+  const questions = [
+    {
+      id: 1,
+      question: "What's my name",
+      options: [
+        {
+          id: "a",
+          answer: "Ava",
+        },
+        {
+          id: "b",
+          answer: "rase",
+        },
+        {
+          id: "c",
+          answer: "hina",
+        },
+      ],
+      id: "c",
+    },
 
-    useEffect(() => {
-    // const tete = async() => {
-    //         try {
-    //           const response = await fetch("https://raw.githubusercontent.com/ajokpete/JAMB-API/main/questions.json")
-    //           if (!response.ok) {
-    //             console.log("error")
-    //           }
-              
-    //           const data = await response.json()
-    //           console.log(data)
-    //         } catch (error) {
-    //             console.log(error.type)
-    //         }
-    //     }
+    {
+      id: 2,
+      question: "What's your name",
+      options: [
+        {
+          id: "a",
+          answer: "Ava",
+        },
+        {
+          id: "b",
+          answer: "rase",
+        },
+        {
+          id: "c",
+          answer: "hina",
+        },
+      ],
+      correct: "b",
+    },
+  ];
 
-    //     tete()
-    },[])
+  const handleScore = (q, correct) => {
+    if (good === q.correct) {
+      setGood(true);
+      alert("good")
+    }
+    if (good === true) {
+      alert("fantastic");
+    }
+  };
+
+  console.log(questions.map((q) => q.question));
   return (
-    
-        
     <div>
-      <h1>comming soon</h1>
+      {questions.map((q) => (
+        <div key={q.index}>
+          <p className="in">{q.question}</p>
+          {q.options.map((options, correct) => (
+            // <button key={id} className="qqq">
+            //   {options.answer}
+            // </button>
+            <section>
+              <label key={options} style={{ display: "block" }}>
+                {options.answer}
+              </label>
+              <input
+                type="radio"
+                value={options.answer}
+                name={options.correct}
+                onChange={(e) => (setGood(e.target.value))}
+                onClick={handleScore}
+              />
+            </section>
+          ))}
+        </div>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default jamb
+export default jamb;

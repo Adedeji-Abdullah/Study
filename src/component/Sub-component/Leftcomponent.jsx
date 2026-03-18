@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Quote from './Sub-Sub-component/Quote'
 import { Link, useNavigate } from "react-router-dom"
 import Time from './Sub-Sub-component/Time'
@@ -33,8 +33,18 @@ const Leftcomponent = () => {
     navigate("/read")
   }
 
+  
+const [menu, setMenu] = useState(false)
+
+const handleHarm = () => {
+  setMenu(!menu)
+}
+
+
   return (
-    <div className='nav-bar'>
+    <>
+    <div className={menu ? "nav-bar.active" : "nav-bar"}>
+    {/* <div className='nav-bar'> */}
       <button className='left-img' onClick={handledashboard}><img src="/dashboard.png" alt="" className='left-img' />Dashboard</button>
       <button className='left-img' onClick={handleimprovement}><img src="/improvement.png" alt="" className='left-img' />Improvement</button>
       <button className='left-img' onClick={handleQuote}><img src="quote.gif" alt="" className='left-img' />Quotes</button>
@@ -42,7 +52,14 @@ const Leftcomponent = () => {
       <button className='left-img' onClick={handleread}><img src="/icons8-reading-time-64.png" alt="" className='left-img' />Reading section</button>
       <button className='left-img' onClick={handleAverage}><img src="/average.png" alt="" className='left-img' />DGP/Average section</button>
       <Logout />
+
+    {/* </div> */}
     </div>
+    
+    <button className="harm" onClick={handleHarm}> &#9776; </button>
+    <button className='delete'>X</button>
+    
+    </>
   )
 }
 
