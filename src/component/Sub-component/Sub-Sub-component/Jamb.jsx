@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 const jamb = () => {
-  const [good, setGood] = useState(false);
+  const [score, setScore] = useState(0)
+  const [submit, setSubmit] = useState(false)
   const questions = [
     {
       id: 1,
@@ -20,7 +21,7 @@ const jamb = () => {
           answer: "hina",
         },
       ],
-      id: "c",
+      correctAnswer: "c",
     },
 
     {
@@ -40,45 +41,78 @@ const jamb = () => {
           answer: "hina",
         },
       ],
-      correct: "b",
+      correctAnswer: "b",
     },
   ];
 
-  const handleScore = (q, correct) => {
-    if (good === q.correct) {
-      setGood(true);
-      alert("good")
+  const handleScore = (quesId, optionId) => {
+    const question = questions.find((ques) => {
+      return ques.id === quesId
+    })
+    if (!question) {
+      alert("question not found")
+      return
     }
-    if (good === true) {
-      alert("fantastic");
+
+    if (question.correctAnswer === optionId) {
+      setScore(prev => prev + 1)
+
+    } else {
+      console.log("Not correct")
+
     }
   };
 
-  console.log(questions.map((q) => q.question));
+  // const submit = () => {
+  //   return <p>{score}</p>
+  // }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    setSubmit(true)
+  }
+
   return (
     <div>
       {questions.map((q) => (
-        <div key={q.index}>
+        <div key={q.id}>
           <p className="in">{q.question}</p>
-          {q.options.map((options, correct) => (
-            // <button key={id} className="qqq">
-            //   {options.answer}
-            // </button>
-            <section>
-              <label key={options} style={{ display: "block" }}>
-                {options.answer}
+          {q.options.map((option) => (
+          <>
+            {/* <button key={id} className="qqq">
+            {option.answer}
+            </button> */}
+              <label key={option} style={{ display: "block" }}>
+                {option.answer}
               </label>
               <input
                 type="radio"
-                value={options.answer}
-                name={options.correct}
-                onChange={(e) => (setGood(e.target.value))}
-                onClick={handleScore}
+                value={option.id}
+                id={option.id}
+                name={q.id}
+                // onChange={(e) => (setGood(e.target.value))}
+                onClick={() => handleScore(q.id, option.id)}
               />
-            </section>
+            </>
           ))}
         </div>
       ))}
+      {/* <button onClick={setSubmit(true)}>Submit</button> */}
+
+      {/* <button type="submit" onSubmit={handleSubmit} onClick={setSubmit(true)}>Submit</button>
+
+
+
+      {submit ? {score} : <p>nope</p>} */}
+
+      <form onSubmit={handleSubmit}>
+        <button type="submit">Submit</button>
+      </form>
+
+      {/* <p>{score}</p> */}
+      {submit ? <p>{score}out of 2}</p> : <p></p>}
+      {submit ? <p>{(score/2) * 100}</p> : <p>{(score/2)*100}%</p>}
     </div>
   );
 };
