@@ -47,6 +47,7 @@ function App() {
         <Route path="/av10" element={<Av10 />}></Route>
         <Route path="/av15" element={<Av15 />}></Route>
         <Route path="/quiz" element={<Quiz />}></Route>
+        <Route path="/calender" element={<Calender />} />
       </Route>
     </Routes>
   );
